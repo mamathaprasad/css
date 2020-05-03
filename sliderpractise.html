@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>An Image Slider made purely with CSS</title>
+</head>
+<body>
+<div>
+<style type="text/css">
+	#mySlider{
+		margin-top: 8%;
+		padding: 0;
+	}
+	#mySlider ul li img{
+		width: 600px;
+		height: 500px;
+	}
+	#mySlider ul li{
+		list-style-type: none;
+		float: left;
+		width: 50px;
+		overflow: hidden;
+		transition: 2s all ease;
+	}
+	#mySlider ul li:hover{
+		width: 600px;
+	}
+	#mySlider ul li {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  overflow-x: auto;
+}
+#myslider ul li img {
+scroll-behavior: smooth;
+  width: 300px;
+  flex-shrink: 0;
+  height: 100%;
+}
+</style>
+<div id="mySlider">
+	<ul>
+		<li><img src="1.jpg" alt="Image couldn't be found"></li>
+		<li><img src="beneli.jpg" alt="Image couldn't be found"></li>
+		<li><img src="2.jpg" alt="cant find image"></li>
+		
+	</ul>
+</div>
+</body>
+</html>
